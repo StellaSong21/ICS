@@ -1,0 +1,1 @@
+wrapper.c 和 wrapper.h文件中是对各系统调用的封装

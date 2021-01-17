@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a27798b5-e283-4f40-8493-b8894014595d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="malloclab-handout" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mm-explicit.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mm-implicit-final.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytxt.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12096">
+              <caret line="576" selection-start-line="576" selection-end-line="576" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mm-segregated.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <element signature="e#2381#2425#0" expanded="true" />
+                <element signature="e#5820#5925#0" />
+                <element signature="e#4482#5226#0" />
+                <element signature="e#6521#6544#0" expanded="true" />
+                <element signature="e#7398#7418#0" />
+                <element signature="e#5229#6245#0" />
+                <element signature="e#7540#7563#0" expanded="true" />
+                <element signature="e#9497#9512#0" />
+                <element signature="e#9497#10495#0" />
+                <element signature="e#10390#10412#0" expanded="true" />
+                <element signature="e#10463#10486#0" expanded="true" />
+                <element signature="e#10497#10875#0" />
+                <element signature="e#10409#12878#0" />
+                <element signature="e#11825#11848#0" expanded="true" />
+                <element signature="e#11908#11931#0" expanded="true" />
+                <element signature="e#12341#12356#0" expanded="true" />
+                <element signature="e#12385#12408#0" expanded="true" />
+                <element signature="e#12827#12850#0" expanded="true" />
+                <element signature="e#12957#13036#0" />
+                <element signature="e#12989#13199#1" />
+                <element signature="e#10353#10376#0" expanded="true" />
+                <element signature="e#13244#13441#1" />
+                <element signature="e#9306#9430#0" />
+                <element signature="e#9432#9556#0" />
+                <element signature="e#13737#14040#1" />
+                <element signature="e#14330#14901#0" />
+                <element signature="e#14904#15080#0" />
+                <element signature="e#14958#14985#0" expanded="true" />
+                <element signature="e#15005#15032#0" expanded="true" />
+                <element signature="e#15111#15446#0" />
+                <element signature="e#15107#16245#0" />
+                <element signature="e#16207#16792#0" />
+                <element signature="e#15592#15992#0" />
+                <element signature="e#15651#15966#0" expanded="true" />
+                <element signature="e#17191#17776#0" />
+                <element signature="e#17191#18510#0" />
+                <element signature="e#18765#18948#0" />
+                <element signature="e#18765#19841#0" />
+                <element signature="e#20083#20276#0" />
+                <element signature="e#20083#21911#0" />
+                <element signature="e#20811#20834#0" expanded="true" />
+                <element signature="e#21123#21146#0" expanded="true" />
+                <element signature="e#21469#21492#0" expanded="true" />
+                <element signature="e#21827#21850#0" expanded="true" />
+                <element signature="e#21995#22122#0" />
+                <element signature="e#18832#18922#1" />
+                <element signature="e#22280#22361#0" />
+                <element signature="e#22539#23311#0" />
+                <element signature="e#23308#23457#0" />
+                <element signature="e#23308#24150#0" />
+                <element signature="e#24296#24488#0" />
+                <element signature="e#24296#26242#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memlib.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>larger_bin_root</find>
+      <find>bins</find>
+      <find>block_ptr</find>
+      <find>WNULL</find>
+      <find>fixed_bin_count</find>
+      <find>insert_free_block</find>
+      <find>PUTTRUNC</find>
+      <find>void *</find>
+      <find>(void *)</find>
+      <find>0U</find>
+      <find>is_prev_free</find>
+      <find>HEAP_NIL</find>
+      <find>HEADER_FOOTER</find>
+      <find>BIT</find>
+      <find>BIT_</find>
+      <find>NEXT_BLPR</find>
+      <find>coalesce</find>
+      <find>SET_ALLOC</find>
+      <find>insert</find>
+      <find>free</find>
+      <find>return</find>
+      <find>HDPR</find>
+      <find>FTPR</find>
+      <find>pred</find>
+      <find>GET_FREE</find>
+      <find>MIN_BLOCK_SIZE</find>
+      <find>DEBUG</find>
+      <find>get_seg_index</find>
+      <find>free_listp</find>
+      <find>place</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>\n&quot;)</replace>
+      <replace>-1</replace>
+      <replace>checkheap</replace>
+      <replace>__LINE__</replace>
+      <replace>PREV</replace>
+      <replace>next</replace>
+      <replace>HDPR</replace>
+      <replace>GET_NEXT_PTR</replace>
+      <replace>GET_PREV_PTR</replace>
+      <replace>NEXT_BLKP</replace>
+      <replace>NEXT_BLPR</replace>
+      <replace>PREV_BLKP</replace>
+      <replace>list_root</replace>
+      <replace>(void *)</replace>
+      <replace>0U</replace>
+      <replace>LIST_NUM</replace>
+      <replace>insert</replace>
+      <replace>PUT</replace>
+      <replace>void *</replace>
+      <replace>0</replace>
+      <replace>heap_start_addr</replace>
+      <replace>DSIZE</replace>
+      <replace>NEXT_BLRP</replace>
+      <replace>HDRP</replace>
+      <replace>FTRP</replace>
+      <replace>prev</replace>
+      <replace>GET_PREV_ALLOC</replace>
+      <replace>MABLOCK</replace>
+      <replace>get_list_index</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/mm-explicit.c" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/test.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/memlib.c" />
+        <option value="$PROJECT_DIR$/mm.c" />
+        <option value="$PROJECT_DIR$/mm-implicit.h" />
+        <option value="$PROJECT_DIR$/mm-textbook.c" />
+        <option value="$PROJECT_DIR$/mm-explicit.h" />
+        <option value="$PROJECT_DIR$/mm-implicit.c" />
+        <option value="$PROJECT_DIR$/explicit2.c" />
+        <option value="$PROJECT_DIR$/mm-explicit2.c" />
+        <option value="$PROJECT_DIR$/mm-explicit3.c" />
+        <option value="$PROJECT_DIR$/mm1.c" />
+        <option value="$PROJECT_DIR$/mm-explicit4.c" />
+        <option value="$PROJECT_DIR$/mm2.c" />
+        <option value="$PROJECT_DIR$/mm3.c" />
+        <option value="$PROJECT_DIR$/traces/exhaust.rep" />
+        <option value="$PROJECT_DIR$/mm-explicit(final).c" />
+        <option value="$PROJECT_DIR$/mm-explicit-final.c" />
+        <option value="$PROJECT_DIR$/mm-wang.c" />
+        <option value="$PROJECT_DIR$/mm-try.cpp" />
+        <option value="$PROJECT_DIR$/mm-copy.c" />
+        <option value="$PROJECT_DIR$/mm-try.c" />
+        <option value="$PROJECT_DIR$/mm-copy2.c" />
+        <option value="$PROJECT_DIR$/mm-segregated-copy.c" />
+        <option value="$PROJECT_DIR$/mm-bst.c" />
+        <option value="$PROJECT_DIR$/mm-segregated-final.c" />
+        <option value="$PROJECT_DIR$/mytxt.txt" />
+        <option value="$PROJECT_DIR$/mm-explicit.c" />
+        <option value="$PROJECT_DIR$/mm-segregated.c" />
+        <option value="$PROJECT_DIR$/mm-implicit-final.c" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="y" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/LAB/C++/ooplab4" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Images" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\计算机系统基础（下）（唐渊）\lab\lab2\malloclab-handout\malloclab-handout" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a27798b5-e283-4f40-8493-b8894014595d" name="Default Changelist" comment="" />
+      <created>1559962794554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559962794554</updated>
+      <workItem from="1559962795736" duration="20038000" />
+      <workItem from="1560001291138" duration="30600000" />
+      <workItem from="1560054051639" duration="3723000" />
+      <workItem from="1560057863940" duration="18681000" />
+      <workItem from="1560082061591" duration="4682000" />
+      <workItem from="1560117503810" duration="33308000" />
+      <workItem from="1560171748424" duration="9082000" />
+      <workItem from="1560852434503" duration="184000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="120298000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12611157" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32983023" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294702" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294702" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.5106383" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32983023" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/mm-segregated-1.c</url>
+          <line>439</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/mm-segregated-1.c</url>
+          <line>465</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/mm-segregated-1.c</url>
+          <line>656</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/traces/amptjp-bal.rep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/win/share/cmake-3.14/Modules/CMakeTestCCompiler.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.c" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdriver.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="952" column="50" selection-start-line="952" selection-start-column="40" selection-end-line="952" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traces/realloc2.rep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traces/needle.rep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419095">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-naive.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-segregated.h" />
+    <entry file="file://$PROJECT_DIR$/mm-explicit.h" />
+    <entry file="file://$PROJECT_DIR$/config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-implicit.h" />
+    <entry file="file://$PROJECT_DIR$/mm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="e#35#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-explicit2.c" />
+    <entry file="file://$PROJECT_DIR$/mm-explicit3.c" />
+    <entry file="file://$PROJECT_DIR$/mm-explicit4.c" />
+    <entry file="file://$PROJECT_DIR$/mm2.c" />
+    <entry file="file://$PROJECT_DIR$/mm1.c" />
+    <entry file="file://$PROJECT_DIR$/mm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traces/exhaust.rep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-explicit-final.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-903">
+          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
+          <folding>
+            <element signature="e#7411#9553#0" />
+            <element signature="e#10175#10614#0" />
+            <element signature="e#11322#12033#0" />
+            <element signature="e#12035#12766#0" />
+            <element signature="e#12768#14274#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traces/alaska.rep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-sgregated-3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1764">
+          <folding>
+            <element signature="e#2004#2048#0" expanded="true" />
+            <element signature="e#2138#2273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-try.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2022">
+          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-segregated-1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1302">
+          <caret line="173" column="54" selection-start-line="173" selection-start-column="54" selection-end-line="173" selection-end-column="54" />
+          <folding>
+            <element signature="e#41#2451#0" />
+            <element signature="e#9553#10247#0" />
+            <element signature="e#10249#10435#0" />
+            <element signature="e#10616#10671#0" />
+            <element signature="e#14170#15637#0" />
+            <element signature="e#15639#16428#0" />
+            <element signature="e#18821#18876#0" expanded="true" />
+            <element signature="e#19664#19825#0" expanded="true" />
+            <element signature="e#21083#21691#0" />
+            <element signature="e#21693#21864#0" />
+            <element signature="e#21866#22171#0" />
+            <element signature="e#22173#22499#0" />
+            <element signature="e#22501#22783#0" />
+            <element signature="e#22785#23904#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-segregated-2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="e#474#518#0" expanded="true" />
+            <element signature="e#607#742#0" expanded="true" />
+            <element signature="e#7186#7209#0" expanded="true" />
+            <element signature="e#7683#7698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-bst.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1434">
+          <caret line="419" column="22" selection-start-line="419" selection-start-column="22" selection-end-line="419" selection-end-column="22" />
+          <folding>
+            <element signature="e#2270#2314#0" expanded="true" />
+            <element signature="e#2404#2539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-textbook.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4389">
+          <caret line="209" column="30" lean-forward="true" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
+          <folding>
+            <element signature="e#415#550#0" expanded="true" />
+            <element signature="e#7963#8488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-segregated-final.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="395" selection-start-line="395" selection-end-line="402" selection-end-column="3" />
+          <folding>
+            <element signature="e#1592#1616#0" expanded="true" />
+            <element signature="e#1677#1812#0" expanded="true" />
+            <element signature="e#6497#8637#0" />
+            <element signature="e#8872#9663#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-segregated-wang.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10650">
+          <caret line="726" column="5" selection-start-line="726" selection-start-column="5" selection-end-line="726" selection-end-column="5" />
+          <folding>
+            <element signature="e#26847#31984#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-explicit.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytxt.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12096">
+          <caret line="576" selection-start-line="576" selection-end-line="576" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-segregated.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#2381#2425#0" expanded="true" />
+            <element signature="e#5820#5925#0" />
+            <element signature="e#4482#5226#0" />
+            <element signature="e#6521#6544#0" expanded="true" />
+            <element signature="e#7398#7418#0" />
+            <element signature="e#5229#6245#0" />
+            <element signature="e#7540#7563#0" expanded="true" />
+            <element signature="e#9497#9512#0" />
+            <element signature="e#9497#10495#0" />
+            <element signature="e#10390#10412#0" expanded="true" />
+            <element signature="e#10463#10486#0" expanded="true" />
+            <element signature="e#10497#10875#0" />
+            <element signature="e#10409#12878#0" />
+            <element signature="e#11825#11848#0" expanded="true" />
+            <element signature="e#11908#11931#0" expanded="true" />
+            <element signature="e#12341#12356#0" expanded="true" />
+            <element signature="e#12385#12408#0" expanded="true" />
+            <element signature="e#12827#12850#0" expanded="true" />
+            <element signature="e#12957#13036#0" />
+            <element signature="e#12989#13199#1" />
+            <element signature="e#10353#10376#0" expanded="true" />
+            <element signature="e#13244#13441#1" />
+            <element signature="e#9306#9430#0" />
+            <element signature="e#9432#9556#0" />
+            <element signature="e#13737#14040#1" />
+            <element signature="e#14330#14901#0" />
+            <element signature="e#14904#15080#0" />
+            <element signature="e#14958#14985#0" expanded="true" />
+            <element signature="e#15005#15032#0" expanded="true" />
+            <element signature="e#15111#15446#0" />
+            <element signature="e#15107#16245#0" />
+            <element signature="e#16207#16792#0" />
+            <element signature="e#15592#15992#0" />
+            <element signature="e#15651#15966#0" expanded="true" />
+            <element signature="e#17191#17776#0" />
+            <element signature="e#17191#18510#0" />
+            <element signature="e#18765#18948#0" />
+            <element signature="e#18765#19841#0" />
+            <element signature="e#20083#20276#0" />
+            <element signature="e#20083#21911#0" />
+            <element signature="e#20811#20834#0" expanded="true" />
+            <element signature="e#21123#21146#0" expanded="true" />
+            <element signature="e#21469#21492#0" expanded="true" />
+            <element signature="e#21827#21850#0" expanded="true" />
+            <element signature="e#21995#22122#0" />
+            <element signature="e#18832#18922#1" />
+            <element signature="e#22280#22361#0" />
+            <element signature="e#22539#23311#0" />
+            <element signature="e#23308#23457#0" />
+            <element signature="e#23308#24150#0" />
+            <element signature="e#24296#24488#0" />
+            <element signature="e#24296#26242#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memlib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm-implicit-final.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

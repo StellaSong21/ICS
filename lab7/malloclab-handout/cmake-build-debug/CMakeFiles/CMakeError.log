@@ -1,0 +1,234 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_cc159/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_cc159.dir\build.make CMakeFiles/cmTC_cc159.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc159.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_cc159.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_cc159.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_cc159.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_cc159.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_cc159/fast' failed
+mingw32-make.exe: *** [cmTC_cc159/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_5350a/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5350a.dir\build.make CMakeFiles/cmTC_5350a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5350a.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_5350a.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_5350a.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_5350a.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5350a.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_5350a/fast' failed
+mingw32-make.exe: *** [cmTC_5350a/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_30ae9/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_30ae9.dir\build.make CMakeFiles/cmTC_30ae9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30ae9.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_30ae9.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_30ae9.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_30ae9.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_30ae9.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_30ae9/fast' failed
+mingw32-make.exe: *** [cmTC_30ae9/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_79e51/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_79e51.dir\build.make CMakeFiles/cmTC_79e51.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79e51.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_79e51.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_79e51.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_79e51.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_79e51.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_79e51/fast' failed
+mingw32-make.exe: *** [cmTC_79e51/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_b4a51/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b4a51.dir\build.make CMakeFiles/cmTC_b4a51.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4a51.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b4a51.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_b4a51.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b4a51.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b4a51.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_b4a51/fast' failed
+mingw32-make.exe: *** [cmTC_b4a51/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_05a69/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_05a69.dir\build.make CMakeFiles/cmTC_05a69.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_05a69.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_05a69.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_05a69.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_05a69.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_05a69.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_05a69/fast' failed
+mingw32-make.exe: *** [cmTC_05a69/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_9d89d/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_9d89d.dir\build.make CMakeFiles/cmTC_9d89d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d89d.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_9d89d.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_9d89d.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_9d89d.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_9d89d.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_9d89d/fast' failed
+mingw32-make.exe: *** [cmTC_9d89d/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_98bd9/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_98bd9.dir\build.make CMakeFiles/cmTC_98bd9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98bd9.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_98bd9.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_98bd9.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_98bd9.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_98bd9.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_98bd9/fast' failed
+mingw32-make.exe: *** [cmTC_98bd9/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_b22dd/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b22dd.dir\build.make CMakeFiles/cmTC_b22dd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b22dd.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b22dd.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_b22dd.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b22dd.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b22dd.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_b22dd/fast' failed
+mingw32-make.exe: *** [cmTC_b22dd/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_92c1c/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_92c1c.dir\build.make CMakeFiles/cmTC_92c1c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92c1c.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_92c1c.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_92c1c.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_92c1c.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_92c1c.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_92c1c/fast' failed
+mingw32-make.exe: *** [cmTC_92c1c/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_783be/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_783be.dir\build.make CMakeFiles/cmTC_783be.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_783be.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_783be.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_783be.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_783be.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_783be.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_783be/fast' failed
+mingw32-make.exe: *** [cmTC_783be/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_723e4/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_723e4.dir\build.make CMakeFiles/cmTC_723e4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_723e4.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_723e4.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_723e4.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_723e4.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_723e4.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_723e4/fast' failed
+mingw32-make.exe: *** [cmTC_723e4/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Environment/C/MinGW/bin/mingw32-make.exe cmTC_7ac1a/fast 
+D:/Environment/C/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7ac1a.dir\build.make CMakeFiles/cmTC_7ac1a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ac1a.dir/testCCompiler.c.obj
+D:\Environment\C\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_7ac1a.dir\testCCompiler.c.obj   -c C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: C:\Users\lenovo\Desktop\璁＄畻鏈虹郴缁熷熀纭€锛堜笅锛夛紙鍞愭笂锛塡lab\lab2\malloclab-handout\malloclab-handout\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_7ac1a.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_7ac1a.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_7ac1a.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/lenovo/Desktop/计算机系统基础（下）（唐渊）/lab/lab2/malloclab-handout/malloclab-handout/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_7ac1a/fast' failed
+mingw32-make.exe: *** [cmTC_7ac1a/fast] Error 2
+
+

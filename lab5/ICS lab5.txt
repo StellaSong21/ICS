@@ -1,0 +1,27 @@
+smali 基础介绍：
+1、类似安卓上的汇编语言
+2、基于寄存器
+3、V Z B S 等代表Java中的boolean int等基本数据结构
+4、class --> L<Java>/<util>/<String>类似
+5、[表示数组 ，如[I表示int[]
+6、参数表形式
+7、field定义
+8、指令集，data definition， 如int i = 3; const/4 v5, 0x3，形式上类似汇编语言形式
+9、各种运算符表示，一元运算符、二元运算符
+10、无条件跳转，goto
+11、有条件跳转，if    target
+12、比较，compare，sgn
+13、创建数组，如new-array
+14、try-catch，try-catch-finally
+lab5：
+DDL：12.20
+1、dalvik，安卓上的Java虚拟机
+2、安卓应用，字符串逻辑，逆向，做题
+3、安卓模拟器，emulator
+4、输入（由代码获得）字符串，check
+5、Apktool，辅助工具，命令行工具（apktool d ics_lab_smali.apk反编译）
+6、./ics_lab_smali/smali/fudan/edu/cn/ics_lab_smali/MainActivity.smali 中有代码逻辑
+7、反汇编为Java，尽量保持变量名（40%）
+8、返回err（30%）
+9、返回“IXWJM”（30%）
+备注：input不一定唯一

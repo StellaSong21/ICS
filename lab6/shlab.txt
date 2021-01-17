@@ -1,0 +1,11 @@
+job：The child processes created as a result of interpreting a single command line are known collectively as a job（由于解释单个命令行而创建的子进程统称为作业）
+
+1.tsh>
+2.如果是内嵌的命令，直接在前端解决；如果是可执行文件，在子进程中执行
+3.tsh不需要支持管道和重定向
+4.ctrl+c：SIGINT；ctrl+z：SIGTSTP；这两个命令会使前台的进程（及其子进程）退出或挂起，如果没有前台运行的进程，那么没有影响
+5.如果命令的最后有&表示在后台执行
+6.每一个进程都有不同的PID和JID标识，%5表示JID为5，5表示PID为5
+7.built-in 命令：quit（中止shell）、jobs（列出后台运行的进程列表）、bg <job>（通过发送一个SIGCONT信号重启<job>，并在后台运行，job可以是JID或者是PID）、fg <job>（与前者类似，是在前台运行）
+8.该shell应该可以回收所有的子进程，如果任何作业因收到未捕获的信号而终止, 则 tsh 应识别此事件并打印带有作业 pid 和有问题信号的说明的消息。
+9. ./sdriver.pl -t trace01.txt -s ./tsh -a "-p"

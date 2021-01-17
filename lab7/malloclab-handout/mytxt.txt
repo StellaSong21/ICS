@@ -1,0 +1,576 @@
+1.唯一需要修改和上交的文件是mm.c
+2.mdriver.c用来测试解决方案
+3.make来生成驱动程序，./mdriver运行
+4.The mm-naive.c file we have given you implements everything correctly but naively. In addition, the mm-textbook.c file in the handout directory implements the example implicit list allocator described in your textbook
+5.无效的优化
+6.define other static helper
+7.int mm_init(void):
+    --必要的初始化，栈空间的初始化
+    --正常返回0；出错返回-1
+    --必须重初始化全局的指针
+    --不能调用mem_init
+    --每次执行程序之前，都会调用这个函数重设整个heap
+8.void *malloc(size_t size):
+    --返回一个指向至少size bytes的已分配的空间
+    --该空间不会被其他的使用
+    --8-byte对齐
+9.void free(void *ptr):
+    --通过ptr指针释放已分配的块
+    --只有是之前malloc、calloc、realloc返回的ptr并且没有被释放时才会执行
+    --free(NULL)没有任何效果
+10.void *realloc(void *ptr, size_t size):
+    --返回一个指向至少为size bytes的已分配空间的指针
+    --ptr == NULL ==> malloc(size)
+    --size == 0 ==> free(ptr),return NULL
+    --ptr != NULL，那么只有是之前malloc、calloc、realloc返回的ptr并且没有被释放时才会执行
+    --重新分配size bytes大小的块，并返回地址，前min{原size，size}的内容不变
+    --原来的块要被释放
+11.void *calloc(size_t nmemb, size_t size):
+    --申请一个数组有nmemb个元素，每个元素大小为tsize bytes，返回指向该块内存的指针，初始化为0
+    --这个不会用throughput和performance评分，实现正确就行
+12.void mm_checkheap(int _LINE_):
+    --heap consistency checker 或 simply heap checker，浏览堆检查正确性（如header和footer是否正确）
+    --必须默默的跑，直到在堆中检测到错误，打印信息，并exit（）结束
+    --会打印很多在large trace中有用的信息
+    --一个有质量的checker是重要的，许多malloc的bug太微小以至于不能用gdb来debug。最有用的就是用checker，当找到一个bug，可以分离出来，重复调用checker直到找到出错的指令
+    --很重要，会被评分，问助教的话，第一件事就是看这个函数
+    --传递行号作为参数，出错时打印行号
+13.语义和libc相同，man malloc查看完整文档
+14.memlib模拟了分配器对内存的操作，可以调用其中的以下函数：
+    --void *mem_sbrk(int incr):扩展堆incr bytes，incr是一个正数，返回一个指向新分配堆空间的起始位置的指针。语义和和unix的sbrk函数相同，但是sbrk只接受正整数作为参数
+    --void *mem_heap_lo(void):返回指向heap的第一个byte的指针
+    --void *mem_heap_hi(void):返回指向heap的最后一个byte的指针
+    --size_t mem_heapsize(void):返回当前heap的大小，bytes为单位
+    --size_t mem_pagesize(void):返回系统的页大小，linux是4K
+15.mdriver.c测试mm.c的正确性，空间峰值利用率和吞吐量，这些驱动程序被一系列跟踪文件控制
+--每一个跟踪文件都包括一系列的分配和释放指令驱动驱动程序以一定的序列调用calloc和free函数
+--最后用到的驱动程序都是一样的
+--每一次驱动程序执行的时候，都会把每一个trace file执行12次，一次保证正确性，一次测试峰值利用率，十次检测性能
+16.mdriver.c接受以下命令行参数，正常的是没有参数运行
+    -- -p:每一个trace文件运行12次，1次保证正确，1次测试峰值利用率，10次测试性能
+    -- -t <tracedir>:找到tracedir中默认的trace files，而不是默认的config.h中的trace files
+    -- -f <tracefile>:用tracefile测试而不是指定的tracefiles的集合
+    -- -c <tracefile>:只运行tracefile一次，及测试正确性，对与打印debug信息很有用
+    -- -h:打印命令行参数的集合
+    -- -l:除了自身写的malloc包，也运行libc_malloc包。如果相看实际的malloc包的速度是有用的
+    -- -V:详细的输出，每一个trace file运行时打印附加的诊断信息。对于查看那个trace file失败是有用的
+    -- -v <verbose level>:手动设置详细等级，用int来表示
+    -- -d <i>:debug level=0,做很少的有效性检查，当几乎做完，只是调整性能是有用；debug level=1,默认情况，每个数组都有随机的填充位，每次分配或释放，都会检测这些位是否改变；debug level=2，每一个操作做完之后，所有的数组都会被检查，非常慢，单数对于找到问题是很有用的
+    -- -D:等价于-d2
+    -- -s <s>:设置超时s秒，默认没有这个设置
+17.写的是一个通用的分配器，检测特定的trace而改变行为会被扣20分
+18.不可以改变mm.c的接口，但是可以写static的helper
+19.不应该调用任何内存管理相关的库和系统调用。任何libc中的malloc和calloc，free，realloc，sbrk，brk的调用都是禁止的
+20.不应该在mm.c中定义任何全局的数据结构，如array，tree，list。但是可以定义全局的标量，如整数、浮点数和指针。这个限制是因为驱动程序无法将这些全局变量计入峰值计算中。如果需要大的数据结构，需要存进heap的开始位置
+21.不允许提交CSAPP的code。但是可以基于他们的做一些修改，我们的分配器是在64位机器上跑的
+22.可以看一些高级的算法描述，但是不允许看任何malloc的实现或者copy，除了课本上的和K&R的
+23.总是返回指针，并且是8-bytes对齐
+24.编译时不能有任何警告，这个会被评分
+25.最终一共120分：
+--性能100分：
+    --峰值利用率，驱动程序使用的内存总量和分配器使用的堆大小的比率，最优为1，应该使用策略尽可能减少碎片
+    --吞吐量，每一秒完成的指令数
+    --权重计算公式：。。。
+--heap checker10分：要获得此部分的全部功劳，我们要求您检查数据结构的所有不变量。
+下面提供了堆检查器应检查的一些示例：
+    --检查堆（隐式列表，显式列表，隔离列表）：
+        -- 检查结语和序言块。
+        -- 检查每个块的地址对齐方式。
+        -- 检查堆边界。
+        -- 检查每个块的页眉和页脚：大小（最小大小，对齐方式），上一个/下一个分配/空闲位一致性，页眉和页脚相互匹配。
+        -- 检查合并：在堆中没有两个连续的空闲块。
+    --检查空闲列表（显式列表，隔离列表）：
+        -- 所有下一个/前一个指针都是一致的（如果A的下一个指针指向B，B的前一个指针应指向A）。
+        -- 所有空闲列表指针指向mem heap lo（）和mem heap high（）之间。
+        -- 通过迭代每个块并通过指针遍历空闲列表来计算空闲块，看它们是否匹配。
+        -- 每个列表桶中的所有块都在桶大小范围内（隔离列表）
+--风格10分：
+    --您的代码应该被分解为函数并使用尽可能少的全局变量。 您应该使用宏，内联函数或压缩结构将指针算法隔离到几个地方
+    --您的mm.c文件必须以标题注释（header comment）开头，该标题注释概述了空闲和已分配块的结构，空闲列表的组织以及分配器如何操作空闲列表
+    --除了此概述标题注释之外，每个函数前面都必须有一个标题注释，用于描述函数的功能
+    --您将需要使用内联注释来解释代码流或棘手的代码
+26.
+--尽管这些机器完全相同，但您的班级机器和Autolab上的测量吞吐量可能会有所不同。你的工作是确保你的分配器足够快，以至于这些差异无关紧要。
+--使用mdriver -c选项或-f选项。在初始开发期间，使用微小的跟踪文件将简化调试和测试。
+--使用mdriver -V选项。 -V选项还将指示何时处理每个跟踪文件，这将帮助您隔离错误。
+--使用mdriver -D选项。这需要进行大量检查以快速查找错误。
+--使用调试器。调试器将帮助您隔离和识别越界内存引用。修改Makefile以将-g选项传递给gcc，而不是在使用调试器时将-O3选项传递给gcc。但是在进行性能测试时不要忘记将Makefile恢复为原始文件。
+--使用gdb的watch命令查找更改了一些您不希望更改的值的内容。
+--将指针算法封装在C预处理器宏或内联函数中。由于所有必要的转换，内存管理器中的指针算法容易混淆且容易出错。通过为指针操作编写宏，可以显着降低复杂性。有关示例，请参阅文本。
+--请记住，我们正在使用64位Linux机器。指针占用8个字节的空间，因此您应该了解本书中的宏并将它们移植到64位计算机上。值得注意的是，在64位Linux机器上，sizeof（size t）== 8。
+--使用堆一致性检查程序。我们为你的mm checkheap函数分配了10个点是有原因的。在调试malloc软件包时，良好的堆一致性检查程序将为您节省数小时。您可以使用堆检查器来确定实现中出错的地方（希望不会在太多地方！）。确保详细说明堆检查器。为了有用，堆检查器应该只在检测到错误时生成输出。每次更改实现时，您应该做的第一件事就是考虑mm checkheap将如何变化，需要执行哪种测试等等。
+--使用分析器。您可能会发现gprof工具有助于优化性能。
+--保持备份。每当您有一个工作分配器并正在考虑对其进行更改时，请保留最后一个工作版本的备份副本。进行更改会无意中破坏代码然后无法撤消代码是很常见的。
+--版本化您的实施。您可能会发现在分配期间管理几个不同版本的实现（例如，显式列表，隔离列表）很有用。由于mdriver查找mm.c，因此在这种情况下，在文件之间创建符号链接很有用。例如，您可以在mm.c和您的实现之间创建一个符号链接，例如mm-explicit.c，命令行为ln -s mm-explicit mm.c.现在也是学习像Git（http://git-scm.com）这样的工业级版本控制系统的好时机。
+--尽早开始！可以用几页代码编写一个高效的malloc包。但是，我们可以保证它将成为您职业生涯迄今为止编写的最困难和最复杂的代码。所以早点开始，祝你好运！
+27.基本上，您希望设计一种算法和数据结构来管理空闲块，从而实现空间利用率和速度的正确平衡。请注意，这需要权衡。对于空间，您希望保持内部数据结构较小。此外，在分配空闲块时，您希望对空闲块进行彻底（因而慢）扫描，以提取最符合我们需求的块。对于速度，您需要消耗更多空间的快速（因此复杂）数据结构。以下是一些可供您使用的设计选项：
+•组织空闲块的数据结构： - 隐式空闲列表 - 显式空闲列表 - 隔离空闲列表
+•扫描freeblocks的算法： - first fit/next fit - Blocks sorted by address with first fit - best fit
+您可以从两者中挑选（几乎）任何组合。例如，您可以实现具有next fit的显式空闲列表，具有最佳拟合的隔离列表，等等。此外，您可以将简单数据结构的工作实现构建到更复杂的数据结构上。
+通常，我们建议您从隐式空闲列表（您的讲义目录中的mm-textbook.c）开始，然后将其更改为显式列表，然后使用显式列表作为基于隔离列表的最终版本的基础。
+
+mm-explicit.c
+/*
+ * mm_checkheap - Show detail of current heap and do some check.
+ *      block point| size | alloc | user point
+ */
+void mm_checkheap(int verbose) {
+    // address: |size|0/1|
+    unsigned int freecount_heap = 0;
+    unsigned int freecount_list = 0;
+    unsigned int size_temp;
+
+    char *ptr = heap_listp;
+    char *temp;
+
+    printf("%d ====================================\n", verbose);
+    while (GET(HDPR(ptr)) != 0x01) {
+        temp = HDPR(ptr);
+        size_temp = GET_SIZE(temp);
+
+        if (GET_ALLOC(temp)) {
+            printf("%p | %08x | %u | %p \n",
+                   temp, size_temp, GET_ALLOC(temp), ptr);
+        } else {
+            printf("%p | %08x | %u | %p | %p | %p \n", temp,
+                   size_temp, GET_ALLOC(temp), ptr,
+                   prev_free_blk(ptr), next_free_blk(ptr));
+            freecount_heap++;
+        }
+
+        // check val euqal between head and foot
+        if (GET(HDPR(ptr)) != GET(FTPR(ptr))) {
+            printf("error!! head != foot %p\n", ptr);
+            exit(1);
+        }
+
+        // last_alloc = GET_ALLOC(temp);
+        ptr = NEXT_BLKP(ptr);
+    }
+
+    temp = HDPR(ptr);
+    printf("%p | %08x | %u | %p \n", temp, GET_SIZE(temp), GET_ALLOC(temp), ptr);
+    // printf("next start find: %p\n", next_find_ptr);
+    printf("free start find: %p, %p\n", free_listp, next_free_blk(free_listp));
+
+    // show free list
+    ptr = next_free_blk(free_listp);
+    while (ptr != free_listp) {
+        freecount_list++;
+        // printf("%p |p: %p |n: %p \n", ptr,
+        //       pred_free_blk(ptr), next_free_blk(ptr));
+        ptr = next_free_blk(ptr);
+    }
+    printf("free list count: %d, heap free list count: %d\n", freecount_list, freecount_heap);
+
+    // check free block num in heap equal with in free list
+    if (freecount_heap != freecount_list) {
+        printf("error ! free block num errr \n");
+        exit(1);
+    }
+
+    printf("%d ====================================\n", verbose);
+}
+
+
+/*
+ * mm-implicit.c
+ * implicit free list + first-fit | next-fit | best-fit
+ *
+ * NOTE TO STUDENTS: Replace this header comment with your own header
+ * comment that gives a high level description of your solution.
+ */
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <limits.h>
+
+#include "mm.h"
+#include "memlib.h"
+//todo
+/* If you want debugging output, use the following macro.  When you hand
+ * in, remove the #define DEBUG line. */
+#define DEBUG
+#ifdef DEBUG
+# define dbg_printf(...) printf(__VA_ARGS__)
+#else
+# define dbg_printf(...)
+#endif
+
+/* do not change the following! */
+#ifdef DRIVER
+/* create aliases for driver tests */
+#define malloc mm_malloc
+#define free mm_free
+#define realloc mm_realloc
+#define calloc mm_calloc
+#endif /* def DRIVER */
+
+/* single word (4) or double word (8) alignment */
+#define ALIGNMENT 8
+
+/* rounds up to the nearest multiple of ALIGNMENT */
+#define ALIGN(p) (((size_t)(p) + (ALIGNMENT-1)) & ~0x7)
+
+/* todo my define */
+/*
+ * If FIT defined as 0, use best-fit search,
+ * if 1, use next-fit search,
+ * if 2, use address-first-fit search(same as 0 when implicit-free-list)
+ * else use first-fit search
+ */
+#define FIT 1
+
+/* Basic constants and macros */
+#define WSIZE       4       /* Word and header/footer size (bytes) */
+#define DSIZE       8       /* Double word size (bytes) */
+#define CHUNKSIZE  (1<<12)  /* Extend heap by this amount (bytes) */
+
+#define MAX(x, y) ((x) > (y)? (x) : (y))
+
+/* Pack a size and allocated bit into a word */
+#define PACK(size, alloc)  ((size) | (alloc))
+
+/* Read and write a word at address p */
+#define GET(p)       (*(unsigned int *)(p))
+#define PUT(p, val)  (*(unsigned int *)(p) = (val))
+
+/* Read the size and allocated fields from address p */
+#define GET_SIZE(p)  (GET(p) & ~0x7)
+#define GET_ALLOC(p) (GET(p) & 0x1)
+
+/* Given block ptr bp, compute address of its header and footer */
+#define HDRP(bp)       ((char *)(bp) - WSIZE)//todo bp指向有效载荷开始处
+#define FTRP(bp)       ((char *)(bp) + GET_SIZE(HDRP(bp)) - DSIZE)
+//todo 为什么要减去8bytes？因为size中包括了头和尾，要靠header确定
+
+/* Given block ptr bp, compute address of next and previous blocks */
+#define NEXT_BLKP(bp)  ((char *)(bp) + GET_SIZE(((char *)(bp) - WSIZE)))
+#define PREV_BLKP(bp)  ((char *)(bp) - GET_SIZE(((char *)(bp) - DSIZE)))
+
+/* Global variables */
+static char *heap_listp = 0;  /* Pointer to first block */
+
+#if FIT == 1
+static char *rover;           /* Next fit rover */
+#endif
+/* todo end my define */
+
+/* todo my functions */
+/* Function prototypes for internal helper routines */
+static void *extend_heap(size_t words);
+
+static void place(void *bp, size_t asize);
+
+static void *find_fit(size_t asize);
+
+static void *coalesce(void *bp);
+/* todo end my functions */
+
+//todo list：隐式链表--16bytes（header+footer+8bytes）；
+/*
+ * Initialize: return -1 on error, 0 on success.
+ */
+/* todo
+    --必要的初始化，栈空间的初始化
+    --正常返回0；出错返回-1
+    --必须初始化全局的指针
+    --不能调用mem_init
+    --每次执行程序之前，都会调用这个函数重设整个heap
+ */
+int mm_init(void) {
+    if ((heap_listp = mem_sbrk(4 * WSIZE)) == (void *) -1)
+        return -1;
+    PUT(heap_listp, 0);                          /* Alignment padding */
+    PUT(heap_listp + (1 * WSIZE), PACK(DSIZE, 1)); /* Prologue header */
+    PUT(heap_listp + (2 * WSIZE), PACK(DSIZE, 1)); /* Prologue footer */
+    PUT(heap_listp + (3 * WSIZE), PACK(0, 1));     /* Epilogue header */
+    heap_listp += (2 * WSIZE);
+
+#if FIT == 1
+    rover = heap_listp;
+#endif
+
+    /* Extend the empty heap with a free block of CHUNKSIZE bytes */
+    if (extend_heap(CHUNKSIZE / WSIZE) == NULL)
+        return -1;
+
+    return 0;
+}
+
+/*
+ * malloc
+ */
+//todo 寻找空闲块的策略
+/* todo
+    --返回一个指向至少size bytes的已分配的空间
+    --该空间不会被其他的使用
+    --8-byte对齐
+ */
+void *malloc(size_t size) {
+    size_t asize;      /* Adjusted block size */
+    size_t extendsize; /* Amount to extend heap if no fit */
+    char *bp;
+
+    if (heap_listp == 0) {
+        mm_init();
+    }
+    /* Ignore spurious requests */
+    if (size == 0)
+        return NULL;
+
+    /* Adjust block size to include overhead and alignment reqs. */
+    if (size <= DSIZE)
+        asize = 2 * DSIZE;//todo 头和尾加起来为8bytes，所以要分配16bytes
+    else
+        asize = DSIZE * ((size + (DSIZE) + (DSIZE - 1)) / DSIZE);
+    //todo 如果大于8bytes，那么size+头和尾+7bytes（最大的填充）/DISZE决定分配几个8bytes
+
+    /* Search the free list for a fit */
+    if ((bp = find_fit(asize)) != NULL) {//todo asize包括头和尾，是对齐之后的大小
+        place(bp, asize);
+        return bp;
+    }
+
+    /* No fit found. Get more memory and place the block */
+    extendsize = MAX(asize, CHUNKSIZE);
+    if ((bp = extend_heap(extendsize / WSIZE)) == NULL)
+        return NULL;
+    place(bp, asize);
+    return bp;
+}
+
+/*
+ * free
+ */
+//todo 合并
+/* todo
+    --通过ptr指针释放已分配的块
+    --只有是之前malloc、calloc、realloc返回的ptr并且没有被释放时才会执行
+ */
+void free(void *ptr) {
+    if (ptr == 0)
+        return;
+
+    size_t size = GET_SIZE(HDRP(ptr));
+    if (heap_listp == 0) {
+        mm_init();
+    }
+
+    PUT(HDRP(ptr), PACK(size, 0));
+    PUT(FTRP(ptr), PACK(size, 0));
+    coalesce(ptr);
+}
+
+/*
+ * realloc - you may want to look at mm-naive.c
+ */
+/* todo
+    --返回一个指向至少为size bytes的已分配空间的指针
+    --ptr == NULL ==> malloc(size)
+    --size == 0 ==> free(ptr),return NULL
+    --ptr != NULL，那么只有是之前malloc、calloc、realloc返回的ptr并且没有被释放时才会执行
+    --重新分配size bytes大小的块，并返回地址，前min{原size，size}的内容不变
+    --原来的块要被释放
+ */
+void *realloc(void *oldptr, size_t size) {
+    size_t oldsize;
+    void *newptr;
+
+    /* If size == 0 then this is just free, and we return NULL. */
+    if (size == 0) {
+        mm_free(oldptr);
+        return 0;
+    }
+
+    /* If oldptr is NULL, then this is just malloc. */
+    if (oldptr == NULL) {
+        return mm_malloc(size);//todo mm_malloc？
+    }
+
+    newptr = mm_malloc(size);
+
+    /* If realloc() fails the original block is left untouched  */
+    if (!newptr) {
+        return 0;
+    }
+
+    /* Copy the old data. */
+    oldsize = GET_SIZE(HDRP(oldptr));
+    if (size < oldsize) oldsize = size;
+    memcpy(newptr, oldptr, oldsize);
+
+    /* Free the old block. */
+    mm_free(oldptr);
+
+    return newptr;
+}
+
+/*
+ * calloc - you may want to look at mm-naive.c
+ * This function is not tested by mdriver, but it is
+ * needed to run the traces.
+ */
+/* todo
+    --申请一个数组有nmemb个元素，每个元素大小为size bytes，返回指向该块内存的指针，初始化为0
+    --这个不会用throughput和performance评分，实现正确就行
+ */
+void *calloc(size_t nmemb, size_t size) {
+    return NULL;
+}
+
+/*
+ * extend_heap - Extend heap with free block and return its block pointer
+ */
+static void *extend_heap(size_t words) {
+    char *bp;
+    size_t size;
+
+    /* Allocate an even number of words to maintain alignment */
+    size = (words % 2) ? (words + 1) * WSIZE : words * WSIZE;
+    if ((long) (bp = mem_sbrk(size)) == -1)
+        return NULL;
+
+    /* Initialize free block header/footer and the epilogue header */
+    PUT(HDRP(bp), PACK(size, 0));         /* Free block header */
+    PUT(FTRP(bp), PACK(size, 0));         /* Free block footer */
+    PUT(HDRP(NEXT_BLKP(bp)), PACK(0, 1)); /* New epilogue header */
+
+    /* Coalesce if the previous block was free */
+    return coalesce(bp);
+}
+
+/*
+ * coalesce - Boundary tag coalescing. Return ptr to coalesced block
+ */
+static void *coalesce(void *bp) {
+    size_t prev_alloc = GET_ALLOC(FTRP(PREV_BLKP(bp)));
+    size_t next_alloc = GET_ALLOC(HDRP(NEXT_BLKP(bp)));
+    size_t size = GET_SIZE(HDRP(bp));
+
+    if (prev_alloc && next_alloc) {            /* Case 1 */
+        return bp;
+    } else if (prev_alloc && !next_alloc) {      /* Case 2 */
+        size += GET_SIZE(HDRP(NEXT_BLKP(bp)));
+        PUT(HDRP(bp), PACK(size, 0));
+        PUT(FTRP(bp), PACK(size, 0));
+    } else if (!prev_alloc && next_alloc) {      /* Case 3 */
+        size += GET_SIZE(HDRP(PREV_BLKP(bp)));
+        PUT(FTRP(bp), PACK(size, 0));
+        PUT(HDRP(PREV_BLKP(bp)), PACK(size, 0));
+        bp = PREV_BLKP(bp);
+    } else {                                     /* Case 4 */
+        size += GET_SIZE(HDRP(PREV_BLKP(bp))) +
+                GET_SIZE(FTRP(NEXT_BLKP(bp)));
+        PUT(HDRP(PREV_BLKP(bp)), PACK(size, 0));
+        PUT(FTRP(NEXT_BLKP(bp)), PACK(size, 0));
+        bp = PREV_BLKP(bp);
+    }
+#if FIT == 1
+    /* Make sure the rover isn't pointing into the free block */
+    /* that we just coalesced */
+    if ((rover > (char *) bp) && (rover < NEXT_BLKP(bp)))
+        rover = bp;
+#endif
+    return bp;
+}
+
+/*
+ * place - Place block of asize bytes at start of free block bp
+ *         and split if remainder would be at least minimum block size
+ */
+static void place(void *bp, size_t asize) {
+    size_t csize = GET_SIZE(HDRP(bp));
+
+    if ((csize - asize) >= (2 * DSIZE)) {//todo 如果多出的部分还可以分配出去的话，就切割
+        PUT(HDRP(bp), PACK(asize, 1));
+        PUT(FTRP(bp), PACK(asize, 1));
+        bp = NEXT_BLKP(bp);
+        PUT(HDRP(bp), PACK(csize - asize, 0));
+        PUT(FTRP(bp), PACK(csize - asize, 0));
+    } else {//todo 如果多出的部分不能分配出去的话，就作为内部碎片
+        PUT(HDRP(bp), PACK(csize, 1));
+        PUT(FTRP(bp), PACK(csize, 1));
+    }
+}
+
+/*
+ * find_fit - Find a fit for a block with asize bytes
+ */
+static void *find_fit(size_t asize) {
+#if FIT == 1
+    /* Next-fit search */
+    char *oldrover = rover;
+
+    /* Search from the rover to the end of list */
+
+    for (; GET_SIZE(HDRP(rover)) > 0; rover = NEXT_BLKP(rover)) {
+        if (!GET_ALLOC(HDRP(rover)) && (asize <= GET_SIZE(HDRP(rover))))
+            return rover;
+    }
+
+    /* search from start of list to old rover */
+    for (rover = heap_listp; rover < oldrover; rover = NEXT_BLKP(rover))
+        if (!GET_ALLOC(HDRP(rover)) && (asize <= GET_SIZE(HDRP(rover))))
+            return rover;
+
+    return NULL;  /* no fit found */
+#elif FIT == 0
+    /* Best-fit search */
+    void *bp = NULL;
+    unsigned int temp = UINT_MAX;
+    void *tempp;
+    for (tempp = heap_listp; GET_SIZE(HDRP(tempp)) > 0; tempp = NEXT_BLKP(tempp)) {
+        if (!GET_ALLOC(HDRP(tempp)) && (asize <= GET_SIZE(HDRP(tempp)))) {
+            if (GET_SIZE(HDRP(tempp)) < temp) {
+                temp = GET_SIZE(HDRP(tempp));
+                bp = tempp;
+            }
+        }
+    }
+    return bp;
+#else
+    /* First-fit search */
+    void *bp;
+
+    for (bp = heap_listp; GET_SIZE(HDRP(bp)) > 0; bp = NEXT_BLKP(bp)) {
+        if (!GET_ALLOC(HDRP(bp)) && (asize <= GET_SIZE(HDRP(bp)))) {
+            return bp;
+        }
+    }
+    return NULL; /* No fit */
+#endif
+}
+
+/*
+ * Return whether the pointer is in the heap.
+ * May be useful for debugging.
+ */
+static int in_heap(const void *p) {
+    return p <= mem_heap_hi() && p >= mem_heap_lo();
+}
+
+/*
+ * Return whether the pointer is aligned.
+ * May be useful for debugging.
+ */
+static int aligned(const void *p) {
+    return (size_t)ALIGN(p) == (size_t) p;
+}
+
+/*
+ * mm_checkheap
+ */
+/* todo
+    --heap consistency checker 或 simply heap checker，浏览堆检查正确性（如header和footer是否正确）
+    --必须默默的跑，直到在堆中检测到错误，打印信息，并exit（）结束
+    --会打印很多在large trace中有用的信息
+    --一个有质量的checker是重要的，许多malloc的bug太微小以至于不能用gdb来debug。
+      最有用的就是用checker，当找到一个bug，可以分离出来，重复调用checker直到找到出错的指令
+    --很重要，会被评分，问助教的话，第一件事就是看这个函数
+    --传递行号作为参数，出错时打印行号
+ */
+void mm_checkheap(int lineno) {}
+
